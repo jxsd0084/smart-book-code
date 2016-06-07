@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: hy-chapter5
+Bundle-SymbolicName: hy-chapter5
+Bundle-Version: 1.0.0.qualifier
+Export-Package: org.smart4j.chapter5,
+ org.smart4j.chapter5.aspect,
+ org.smart4j.chapter5.controller,
+ org.smart4j.chapter5.model,
+ org.smart4j.chapter5.rest,
+ org.smart4j.chapter5.service,
+ org.smart4j.chapter5.soap
