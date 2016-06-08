@@ -1,16 +1,13 @@
 package org.smart4j.chapter5.rest;
 
-import javax.ws.rs.Consumes;
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
-import javax.ws.rs.Produces;
-import javax.ws.rs.core.MediaType;
 import org.smart4j.chapter5.model.Customer;
 import org.smart4j.chapter5.service.CustomerService;
 import org.smart4j.framework.annotation.Inject;
 import org.smart4j.framework.annotation.Service;
 import org.smart4j.plugin.rest.Rest;
+
+import javax.ws.rs.*;
+import javax.ws.rs.core.MediaType;
 
 /**
  * 客户 REST 服务
@@ -20,17 +17,18 @@ import org.smart4j.plugin.rest.Rest;
  */
 @Rest
 @Service
-@Consumes(MediaType.APPLICATION_JSON)
-@Produces(MediaType.APPLICATION_JSON)
+@Consumes( MediaType.APPLICATION_JSON )
+@Produces( MediaType.APPLICATION_JSON )
 public class CustomerRestService {
 
-    @Inject
-    private CustomerService customerService;
+	@Inject
+	private CustomerService customerService;
 
-    @GET
-    @Path("/customer/{id}")
-    public Customer getCustomer(@PathParam("id") long customerId) {
-        return customerService.getCustomer(customerId);
-    }
-    
+	@GET
+	@Path( "/customer/{id}" )
+	public Customer getCustomer( @PathParam( "id" ) long customerId ) {
+
+		return customerService.getCustomer( customerId );
+	}
+
 }

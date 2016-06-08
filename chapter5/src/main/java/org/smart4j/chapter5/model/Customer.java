@@ -5,95 +5,109 @@ package org.smart4j.chapter5.model;
  */
 public class Customer {
 
-    /**
-     * ID
-     */
-    private long id;
+	/**
+	 * ID
+	 */
+	private long id;
 
-    /**
-     * 客户名称
-     */
-    private String name;
+	/**
+	 * 客户名称
+	 */
+	private String name;
 
-    /**
-     * 联系人
-     */
-    private String contact;
+	/**
+	 * 联系人
+	 */
+	private String contact;
 
-    /**
-     * 电话号码
-     */
-    private String telephone;
+	/**
+	 * 电话号码
+	 */
+	private String telephone;
 
-    /**
-     * 邮箱地址
-     */
-    private String email;
+	/**
+	 * 邮箱地址
+	 */
+	private String email;
 
-    /**
-     * 备注
-     */
-    private String remark;
+	/**
+	 * 备注
+	 */
+	private String remark;
 
-    /**
-     * 照片
-     */
-    private String photo;
+	/**
+	 * 照片
+	 */
+	private String photo;
 
-    public long getId() {
-        return id;
-    }
+	public long getId() {
 
-    public void setId(long id) {
-        this.id = id;
-    }
+		return id;
+	}
 
-    public String getName() {
-        return name;
-    }
+	public void setId( long id ) {
 
-    public void setName(String name) {
-        this.name = name;
-    }
+		this.id = id;
+	}
 
-    public String getContact() {
-        return contact;
-    }
+	public String getName() {
 
-    public void setContact(String contact) {
-        this.contact = contact;
-    }
+		return name;
+	}
 
-    public String getTelephone() {
-        return telephone;
-    }
+	public void setName( String name ) {
 
-    public void setTelephone(String telephone) {
-        this.telephone = telephone;
-    }
+		this.name = name;
+	}
 
-    public String getEmail() {
-        return email;
-    }
+	public String getContact() {
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
+		return contact;
+	}
 
-    public String getRemark() {
-        return remark;
-    }
+	public void setContact( String contact ) {
 
-    public void setRemark(String remark) {
-        this.remark = remark;
-    }
+		this.contact = contact;
+	}
 
-    public String getPhoto() {
-        return photo;
-    }
+	public String getTelephone() {
 
-    public void setPhoto(String photo) {
-        this.photo = photo;
-    }
-    
+		return telephone;
+	}
+
+	public void setTelephone( String telephone ) {
+
+		this.telephone = telephone;
+	}
+
+	public String getEmail() {
+
+		return email;
+	}
+
+	public void setEmail( String email ) {
+
+		this.email = email;
+	}
+
+	public String getRemark() {
+
+		return remark;
+	}
+
+	public void setRemark( String remark ) {
+
+		this.remark = remark;
+	}
+
+	public String getPhoto() {
+
+		return photo;
+	}
+
+	public void setPhoto( String photo ) {
+
+		this.photo = photo;
+	}
+
 }

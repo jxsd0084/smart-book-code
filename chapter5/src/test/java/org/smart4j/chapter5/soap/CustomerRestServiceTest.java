@@ -14,11 +14,13 @@ import org.smart4j.plugin.rest.RestHelper;
  */
 public class CustomerRestServiceTest {
 
-    @Test
-    public void getCustomerTest() {
-        String wadl = "http://localhost:8080/rest/CustomerRestService";
-        CustomerRestService customerRestService = RestHelper.createClient(wadl, CustomerRestService.class);
-        Customer customer = customerRestService.getCustomer(1);
-        Assert.assertNotNull(customer);
-    }
+	@Test
+	public void getCustomerTest() {
+
+		String              wadl                = "http://localhost:8080/rest/CustomerRestService";
+		CustomerRestService customerRestService = RestHelper.createClient( wadl, CustomerRestService.class );
+		Customer            customer            = customerRestService.getCustomer( 1 );
+		Assert.assertNotNull( customer );
+	}
+
 }
