@@ -11,8 +11,8 @@ import java.lang.annotation.Target;
  * @author huangyong
  * @since 1.0.0
  */
-@Target(ElementType.METHOD)
-@Retention(RetentionPolicy.RUNTIME)
+@Target( ElementType.METHOD )
+@Retention( RetentionPolicy.RUNTIME )
 public @interface Transaction {
 	
 }

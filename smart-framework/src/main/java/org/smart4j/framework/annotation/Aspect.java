@@ -12,13 +12,13 @@ import java.lang.annotation.Target;
  * @author huangyong
  * @since 1.0.0
  */
-@Target(ElementType.TYPE)
-@Retention(RetentionPolicy.RUNTIME)
+@Target( ElementType.TYPE )
+@Retention( RetentionPolicy.RUNTIME )
 public @interface Aspect {
 
-    /**
-     * 注解
-     */
-    Class<? extends Annotation> value();
-    
+	/**
+	 * 注解
+	 */
+	Class< ? extends Annotation > value();
+
 }

@@ -10,38 +10,44 @@ import java.io.InputStream;
  */
 public class FileParam {
 
-    private String fieldName;
-    private String fileName;
-    private long fileSize;
-    private String contentType;
-    private InputStream inputStream;
+	private String      fieldName;
+	private String      fileName;
+	private long        fileSize;
+	private String      contentType;
+	private InputStream inputStream;
 
-    public FileParam(String fieldName, String fileName, long fileSize, String contentType, InputStream inputStream) {
-        this.fieldName = fieldName;
-        this.fileName = fileName;
-        this.fileSize = fileSize;
-        this.contentType = contentType;
-        this.inputStream = inputStream;
-    }
+	public FileParam( String fieldName, String fileName, long fileSize, String contentType, InputStream inputStream ) {
 
-    public String getFieldName() {
-        return fieldName;
-    }
+		this.fieldName = fieldName;
+		this.fileName = fileName;
+		this.fileSize = fileSize;
+		this.contentType = contentType;
+		this.inputStream = inputStream;
+	}
 
-    public String getFileName() {
-        return fileName;
-    }
+	public String getFieldName() {
 
-    public long getFileSize() {
-        return fileSize;
-    }
+		return fieldName;
+	}
 
-    public String getContentType() {
-        return contentType;
-    }
+	public String getFileName() {
 
-    public InputStream getInputStream() {
-        return inputStream;
-    }
-    
+		return fileName;
+	}
+
+	public long getFileSize() {
+
+		return fileSize;
+	}
+
+	public String getContentType() {
+
+		return contentType;
+	}
+
+	public InputStream getInputStream() {
+
+		return inputStream;
+	}
+
 }
