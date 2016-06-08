@@ -14,10 +14,11 @@ import org.smart4j.framework.util.CodecUtil;
  */
 public class Md5CredentialsMatcher implements CredentialsMatcher {
 
-    public boolean doCredentialsMatch(AuthenticationToken token, AuthenticationInfo info) {
-        String submitted = String.valueOf(((UsernamePasswordToken) token).getPassword());
-        String encrypted = String.valueOf(info.getCredentials());
-        return CodecUtil.md5(submitted).equals(encrypted);
-    }
-    
+	public boolean doCredentialsMatch( AuthenticationToken token, AuthenticationInfo info ) {
+
+		String submitted = String.valueOf( ( ( UsernamePasswordToken ) token ).getPassword() );
+		String encrypted = String.valueOf( info.getCredentials() );
+		return CodecUtil.md5( submitted ).equals( encrypted );
+	}
+
 }

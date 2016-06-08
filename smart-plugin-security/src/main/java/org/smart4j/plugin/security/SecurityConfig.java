@@ -11,29 +11,35 @@ import org.smart4j.framework.util.ReflectionUtil;
  */
 public final class SecurityConfig {
 
-    public static String getRealms() {
-        return ConfigHelper.getString(SecurityConstant.REALMS);
-    }
+	public static String getRealms() {
 
-    public static SmartSecurity getSmartSecurity() {
-        String className = ConfigHelper.getString(SecurityConstant.SMART_SECURITY);
-        return (SmartSecurity) ReflectionUtil.newInstance(className);
-    }
+		return ConfigHelper.getString( SecurityConstant.REALMS );
+	}
 
-    public static String getJdbcAuthcQuery() {
-        return ConfigHelper.getString(SecurityConstant.JDBC_AUTHC_QUERY);
-    }
+	public static SmartSecurity getSmartSecurity() {
 
-    public static String getJdbcRolesQuery() {
-        return ConfigHelper.getString(SecurityConstant.JDBC_ROLES_QUERY);
-    }
+		String className = ConfigHelper.getString( SecurityConstant.SMART_SECURITY );
+		return ( SmartSecurity ) ReflectionUtil.newInstance( className );
+	}
 
-    public static String getJdbcPermissionsQuery() {
-        return ConfigHelper.getString(SecurityConstant.JDBC_PERMISSIONS_QUERY);
-    }
+	public static String getJdbcAuthcQuery() {
 
-    public static boolean isCache() {
-        return ConfigHelper.getBoolean(SecurityConstant.CACHE);
-    }
-    
+		return ConfigHelper.getString( SecurityConstant.JDBC_AUTHC_QUERY );
+	}
+
+	public static String getJdbcRolesQuery() {
+
+		return ConfigHelper.getString( SecurityConstant.JDBC_ROLES_QUERY );
+	}
+
+	public static String getJdbcPermissionsQuery() {
+
+		return ConfigHelper.getString( SecurityConstant.JDBC_PERMISSIONS_QUERY );
+	}
+
+	public static boolean isCache() {
+
+		return ConfigHelper.getBoolean( SecurityConstant.CACHE );
+	}
+
 }

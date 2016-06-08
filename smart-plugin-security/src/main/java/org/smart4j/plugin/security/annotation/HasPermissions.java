@@ -11,13 +11,13 @@ import java.lang.annotation.Target;
  * @author huangyong
  * @since 1.0.0
  */
-@Target({ElementType.TYPE, ElementType.METHOD})
-@Retention(RetentionPolicy.RUNTIME)
+@Target( { ElementType.TYPE, ElementType.METHOD } )
+@Retention( RetentionPolicy.RUNTIME )
 public @interface HasPermissions {
 
-    /**
-     * 权限字符串
-     */
-    String value();
-    
+	/**
+	 * 权限字符串
+	 */
+	String value();
+
 }
