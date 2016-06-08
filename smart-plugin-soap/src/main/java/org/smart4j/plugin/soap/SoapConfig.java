@@ -10,8 +10,9 @@ import org.smart4j.framework.helper.ConfigHelper;
  */
 public class SoapConfig {
 
-    public static boolean isLog() {
-        return ConfigHelper.getBoolean(SoapConstant.LOG);
-    }
-    
+	public static boolean isLog() {
+
+		return ConfigHelper.getBoolean( SoapConstant.LOG );
+	}
+
 }

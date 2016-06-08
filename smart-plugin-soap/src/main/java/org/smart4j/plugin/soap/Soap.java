@@ -11,13 +11,13 @@ import java.lang.annotation.Target;
  * @author huangyong
  * @since 1.0.0
  */
-@Target(ElementType.TYPE)
-@Retention(RetentionPolicy.RUNTIME)
+@Target( ElementType.TYPE )
+@Retention( RetentionPolicy.RUNTIME )
 public @interface Soap {
 
-    /**
-     * 服务名
-     */
-    String value() default "";
-    
+	/**
+	 * 服务名
+	 */
+	String value() default "";
+
 }
